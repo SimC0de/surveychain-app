@@ -19,10 +19,15 @@ export function RootProvider({ children }) {
                     chain={base}
                     config={{
                         appearance: {
-                            mode: 'auto',
+                            name: 'SurveyChain',        // Displayed in modal header
+                            logo: 'https://your-logo.com',// Displayed in modal header
+                            mode: '400',                 // 'light' | 'dark' | '400'
+                            theme: 'base',             // 'default' or custom theme
                         },
                         wallet: {
                             display: 'modal',
+                            termsUrl: 'https://...',
+                            privacyUrl: 'https://...',
                         },
                     }}
                 >
